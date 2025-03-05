@@ -1,5 +1,6 @@
 using BlogMicroservice.AuthService.Data;
 using BlogMicroservice.AuthService.Models;
+using BlogMicroservice.AuthService.Services;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
@@ -8,16 +9,17 @@ using System.Text;
 
 var builder = WebApplication.CreateBuilder(args);
 
-//Register Connection string
+//Register Connection string    
 builder.Services.AddDbContext<AuthDbContext>(options =>
-{
-    options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection"));
-});
+    options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
 
 // setup Identity with ApplicationUser
 builder.Services.AddIdentity<ApplicationUser, IdentityRole>()
     .AddEntityFrameworkStores<AuthDbContext>()
     .AddDefaultTokenProviders();
+
+//Register TokenService using DI
+builder.Services.AddScoped<ITokenService, TokenService>();
 
 //Add authentication with JWT Bearer and schema
 /*builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
