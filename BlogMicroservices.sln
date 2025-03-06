@@ -9,11 +9,13 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Microservices", "Microservi
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Gateway", "Gateway", "{C6E3E6F5-231A-4E77-943F-7D4E30963010}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BlogMicroservice.AuthService", "BlogMicroservice.AuthService\BlogMicroservice.AuthService.csproj", "{FCFB79D3-8A69-4312-A76D-64C1E4FAD931}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BlogMicroservice.AuthService", "BlogMicroservice.AuthService\BlogMicroservice.AuthService.csproj", "{FCFB79D3-8A69-4312-A76D-64C1E4FAD931}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BlogMicroservice.BlogService", "BlogMicroservice.BlogService\BlogMicroservice.BlogService.csproj", "{410BA941-52CA-4999-B266-709133585900}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BlogMicroservice.BlogService", "BlogMicroservice.BlogService\BlogMicroservice.BlogService.csproj", "{410BA941-52CA-4999-B266-709133585900}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BlogMicroservice.CommentService", "BlogMicroservice.CommentService\BlogMicroservice.CommentService.csproj", "{0CC0992A-220A-4580-9AE8-10A417EF8EEB}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BlogMicroservice.CommentService", "BlogMicroservice.CommentService\BlogMicroservice.CommentService.csproj", "{0CC0992A-220A-4580-9AE8-10A417EF8EEB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BlogMicroservice.ApiGateway", "BlogMicroservice.ApiGateway\BlogMicroservice.ApiGateway.csproj", "{9E06F00E-3B19-4537-A4E0-3FC33ECB65C2}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +35,10 @@ Global
 		{0CC0992A-220A-4580-9AE8-10A417EF8EEB}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0CC0992A-220A-4580-9AE8-10A417EF8EEB}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0CC0992A-220A-4580-9AE8-10A417EF8EEB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9E06F00E-3B19-4537-A4E0-3FC33ECB65C2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9E06F00E-3B19-4537-A4E0-3FC33ECB65C2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9E06F00E-3B19-4537-A4E0-3FC33ECB65C2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9E06F00E-3B19-4537-A4E0-3FC33ECB65C2}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -43,6 +49,7 @@ Global
 		{FCFB79D3-8A69-4312-A76D-64C1E4FAD931} = {1DF56213-5DCD-4C8E-A4C3-5AA26D31D8D0}
 		{410BA941-52CA-4999-B266-709133585900} = {1DF56213-5DCD-4C8E-A4C3-5AA26D31D8D0}
 		{0CC0992A-220A-4580-9AE8-10A417EF8EEB} = {1DF56213-5DCD-4C8E-A4C3-5AA26D31D8D0}
+		{9E06F00E-3B19-4537-A4E0-3FC33ECB65C2} = {C6E3E6F5-231A-4E77-943F-7D4E30963010}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {9599E00E-5317-409B-BB8B-25C9D944B771}
