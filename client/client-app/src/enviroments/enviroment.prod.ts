@@ -1,0 +1,4 @@
+export const enviroment ={ 
+    production :true,
+    apiUrl : "https://localhost:8000/api"
+  }
